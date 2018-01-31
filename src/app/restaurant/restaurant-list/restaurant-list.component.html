@@ -1,0 +1,15 @@
+<div class="row">
+	<div class="col-6">
+		<app-pagination [count]="restaurantList?.count" (emiter)="getRestaurants($event)"></app-pagination> 
+	</div>
+	<div class="col-6">
+		<app-price (emiter)="getRestaurants($event)"></app-price>
+	</div>
+	<div class="row">
+		<div class="col-4" *ngFor="let restaurant of restaurantList?.results; let i = index " [ngClass]="{'gray': i%2==0}">
+			<app-restaurant [restaurant]="restaurant"></app-restaurant>
+		</div>
+	</div>
+</div>
+
+

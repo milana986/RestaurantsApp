@@ -1,0 +1,10 @@
+
+<b><a (click)=open()>{{restaurant.name}}</a></b>
+<p>{{restaurant.description}}</p>
+<p>Cuisine: {{restaurant.cuisine}}</p>
+<p>Rating: <app-rating-star [iconFull]="'../../../assets/images/star-full.png'" 
+							[iconEmpty]="'../../../assets/images/star-empty.png'"
+							[rating]="restaurant.rating"></app-rating-star></p> 
+<p>Price: <app-rating-star [iconFull]="'../../../assets/images/coin-full.png'" 
+						   [iconEmpty]="'../../../assets/images/coin-empty.png'"
+						   [rating]="restaurant.price"></app-rating-star></p>  

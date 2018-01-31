@@ -1,0 +1,10 @@
+<br>
+<nav>
+  <ul class="pagination">
+    <li class="page-item" (click)="changePage(1)"><a class="page-link">&laquo;</a></li> 			 <!-- first -->
+    <li class="page-item" (click)="changePage(activePage-1)"><a class="page-link"> < </a></li>		 <!-- previous -->
+    <li class="page-item active"><a class="page-link">{{activePage}}</a></li>
+    <li class="page-item" (click)="changePage(activePage+1)"><a class="page-link"> > </a></li>       <!-- next -->
+    <li class="page-item" (click)="changePage(numberOfPages)"><a class="page-link">&raquo;</a></li>  <!-- last -->
+  </ul>
+</nav>

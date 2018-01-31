@@ -1,0 +1,8 @@
+<br>
+<form>
+	<div class="row">
+		<label>Price range : </label>
+		<input type="number" class="form-control col-4" name="from" [(ngModel)]="prices.priceFrom" (change)="onChange()">
+		<input type="number" class="form-control col-4" name="to" [(ngModel)]="prices.priceTo" (change)="onChange()">
+	</div>
+</form>
